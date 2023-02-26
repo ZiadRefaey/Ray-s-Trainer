@@ -4,8 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/utility.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header index__header">
+      <nav class="navbar pc__nav">
+        <ul>
+          <div class="nav__logo">
+            <img src="/assets/Logos/MainLogo.png" />
+          </div>
+          <div class="nav__items">
+            <a href="index.html"
+              ><li class="nav__item nav__item--active">Home</li>
+            </a>
+            <a href="about.html"><li class="nav__item">About</li> </a>
+            <a href="services.html"><li class="nav__item">Services</li> </a>
+            <a href="resources.html"><li class="nav__item">Resources</li> </a>
+            <a href="contact.html"><li class="nav__item">Contact</li> </a>
+          </div>
+          <div class="nav__cta">
+            <a href="services.html">
+              <button class="btn-primary nav__btn">Enroll Now</button>
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <button class="hamburger"><div class="bar"></div></button>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__header">
+          <img src="/assets/Logos/MainLogo.png" />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="mobile-nav__body">
+          <a class="mobile-nav__item" href="index.html">Home</a>
+          <a class="mobile-nav__item" href="about.html">About</a>
+          <a class="mobile-nav__item" href="services.html">Services</a>
+          <a class="mobile-nav__item" href="resources.html">Resources</a>
+          <a class="mobile-nav__item" href="contact.html">Contact </a>
+        </nav>
+      </div>
+
+      <div class="hero hero__index">
+        <div class="hero__content content__index">
+          <div class="hero__description--container">
+            <div class="hero__description--title">
+              <h2>I'm <span>a Personal Trainer</span></h2>
+            </div>
+            <div class="hero__description--text">
+              <p>
+                I believe that everyone has the potential to reach their fitness
+                goals, and I'm here to help you get there
+              </p>
+            </div>
+            <div class="hero__decription--cta">
+              <a href="services.html"
+                ><button class="btn-primary cta__btn">Enroll Now</button></a
+              >
+            </div>
+          </div>
+          <div class="hero__img">
+            <img src="/assets/Index/hero img.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
