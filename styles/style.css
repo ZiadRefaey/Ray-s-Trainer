@@ -27,6 +27,8 @@
 }
 .navbar--border {
   border-bottom: #030e29 1px solid;
+  background-color: var(--main);
+  z-index: 20;
 }
 .navbar--hidden {
   transform: translateY(-100%);
@@ -290,4 +292,32 @@
 .cta__btn {
   padding: 1rem 3rem;
   font-size: 1.75rem;
+}
+.brand__logos {
+  border: var(--comp) 2px solid;
+  border-radius: 25px;
+  padding: 40px;
+  width: 80%;
+  margin: auto;
+}
+.brand__logos--container {
+  height: 80%;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.brand__logos--item {
+  height: 75%;
+  width: 65%;
+}
+.brand__logos--item img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.7s all;
+}
+.brand__logos--item img:hover {
+  filter: grayscale(0);
 }
