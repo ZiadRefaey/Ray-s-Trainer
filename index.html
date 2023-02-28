@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/utility.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
@@ -58,7 +62,10 @@
         <div class="hero__content content__index">
           <div class="hero__description--container">
             <div class="hero__description--title">
-              <h2>I'm <span class="title__span">a Personal Trainer</span><div class="cursor"></div></h2>
+              <h2>
+                I'm <span class="title__span">a Personal Trainer</span>
+                <div class="cursor"></div>
+              </h2>
             </div>
             <div class="hero__description--text">
               <p>
@@ -94,12 +101,113 @@
         <div class="brand__logos--item logo-4">
           <img src="/assets/Logos/Logo 2.png" />
         </div>
-          <div class="brand__logos--item logo-4">
+        <div class="brand__logos--item logo-4">
           <img src="/assets/Logos/Logo 4.png" />
         </div>
       </div>
     </section>
-    
+    <section class="perks">
+      <div class="perks__container">
+        <div class="perk__card perk__card--1">
+          <div class="perk__card--title">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h4>Training Programs</h4>
+          </div>
+          <div class="perk__card--description">
+            <ul>
+              <li class="perk__card--item">
+                Our personalized training programs are customized to your
+                fitness level, goals, and preferences.
+              </li>
+              <li class="perk__card--item">
+                We use assessments to create a plan that will help you achieve
+                your fitness goals faster and more effectively.
+              </li>
+              <li class="perk__card--item">
+                With our personalized training programs, you'll receive a plan
+                that is tailored specifically to your needs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="perk__card perk__card--2">
+          <div class="perk__card--title">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h4>Nutrition Coaching</h4>
+          </div>
+          <div class="perk__card--description">
+            <ul>
+              <li class="perk__card--item">
+                Our nutrition coaching provides guidance on how to make healthy
+                choices that will fuel your body and support your training.
+              </li>
+              <li class="perk__card--item">
+                Our experienced coaches will work with you to create a
+                personalized nutrition plan that takes into account your dietary
+                needs and preferences.
+              </li>
+              <li class="perk__card--item">
+                With our nutrition coaching, you'll receive the support you need
+                to make healthy choices and achieve your fitness goals.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="perk__card perk__card--3">
+          <div class="perk__card--title">
+            <i class="fa-solid fa-circle-info"></i>
+            <h4>Training Programs</h4>
+          </div>
+          <div class="perk__card--description">
+            <ul>
+              <li class="perk__card--item">
+                Our accountability and support program provides you with the
+                tools you need to stay motivated and on track.
+              </li>
+              <li class="perk__card--item">
+                Our coaches will be there to support you every step of the way,
+                providing guidance, motivation, and accountability.
+              </li>
+              <li class="perk__card--item">
+                With our accountability and support program, you'll have the
+                support you need to achieve your fitness goals and maintain a
+                healthy lifestyle.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="test">'
+      <div class="img__test">
+        <img src="/assets/test.jpg">
+      </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
