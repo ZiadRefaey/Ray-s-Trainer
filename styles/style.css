@@ -448,3 +448,21 @@ height: 50%;
 .perk__card:hover .perk__card--title {
   color: var(--comp);
 }
+.services {
+  padding: 50px 0px;
+}
+.card {
+}
+.services__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1200px;
+  height: 200px;
+  /* padding: 50px 20px; */
+  margin: auto;
+}
+.swiper {
+  height: 100%;
+  width: 50%;
+}
