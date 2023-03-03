@@ -550,6 +550,25 @@
 .services__card--6 {
   background-image: url("/assets/Index/specialTraining.jpg");
 }
+.swiper-container {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-150%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
 /* .rectangle {
   width: 200px;
   height: 100px;
