@@ -1,5 +1,5 @@
 :root {
-  --main: #0f172a;
+  --main: #0c1428;
   --sec: #7f92b0;
   --comp: #0bd1d1;
 }
@@ -25,4 +25,10 @@
 .btn-primary:hover {
   background-position: right;
   transform: translateY(-3px);
+}
+.card {
+  border-radius: 25px;
+  background-color: var(--main);
+  box-shadow: 2px 2px 5px 2px #010a20;
+  z-index: 10;
 }

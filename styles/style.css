@@ -3,13 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .body {
   background-color: #0f172a;
-  height: 300vh;
   color: var(--sec);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .box {
   height: 300vh;
@@ -89,7 +88,7 @@
 
 .nav__item::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -10px;
   left: 0;
   width: 0%;
@@ -102,7 +101,7 @@
 }
 .nav__item--active::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -10px;
   left: 0;
   width: 100%;
@@ -130,7 +129,7 @@
 .hamburger::before,
 .hamburger::after {
   z-index: 120;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
@@ -188,7 +187,7 @@
 .mobile-nav__active::before {
   z-index: 5;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   height: 1000%;
@@ -258,7 +257,7 @@
   text-align: left;
 }
 .hero__description--container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -400px;
@@ -267,7 +266,7 @@
   background-color: #0bd1d1;
   border-radius: 50%;
   filter: blur(130px);
-  z-index: -1;
+  z-index: -10;
 }
 
 .hero__description--title {
@@ -326,7 +325,7 @@
   z-index: 5;
 }
 .hero__img::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   right: -400px;
@@ -342,13 +341,14 @@
   font-size: 1.75rem;
 }
 .brand__logos {
-  border: var(--comp) 2px solid;
-  border-radius: 25px;
+  /* border: var(--comp) 2px solid; */
+
   width: 90%;
   max-width: 1200px;
   padding: 20px 0px;
   margin: auto;
   transform: translateY(-83%);
+  z-index: 10;
 }
 .brand__logos--container {
   height: 80%;
@@ -374,45 +374,17 @@
 .brand__logos--item img:hover {
   filter: grayscale(0);
 }
-/* .img__test {
+.img__test {
   width: 500px;
   height: 500px;
   position: relative;
 }
 
-.img__test::after {
-  position: absolute;
-  content:'';
-  bottom: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  background-color: #0bd1d1;
-  opacity: 0.3;
-  transition:0.4s all;
-}
-.img__test::before {
-  position: absolute;
-  content:'';
-  top: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  background-color: #0bd1d1;
-  opacity: 0.3;
-  transition:0.4s all;
-}
-.img__test:hover::before {
-  height: 50%;
-}
-.img__test:hover::after {
-height: 50%;
-}
 .img__test img {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-} */
+}
 
 .perks {
   width: 100%;
@@ -426,9 +398,7 @@ height: 50%;
   grid-gap: 25px;
 }
 .perk__card {
-  border: 2px solid var(--sec);
   padding: 20px 40px;
-  border-radius: 15px;
   transition: 0.2s all;
 }
 .perk__card--title {
@@ -441,9 +411,8 @@ height: 50%;
   margin-right: 5px;
 }
 .perk__card:hover {
-  transform: translateY(-3%);
+  transform: translateY(-2%);
   cursor: default;
-  border: 2px solid var(--comp);
 }
 .perk__card:hover .perk__card--title {
   color: var(--comp);
@@ -451,18 +420,150 @@ height: 50%;
 .services {
   padding: 50px 0px;
 }
-.card {
-}
+
 .services__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 1200px;
   height: 200px;
-  /* padding: 50px 20px; */
+  padding: 10px 20px;
   margin: auto;
+}
+.services__header--title {
+  color: var(--comp);
+  font-size: 1.25rem;
+}
+.services__header--tagline {
+  font-size: 1.1rem;
+}
+.services__header--container {
+  padding: 0px 20px;
+  max-width: 250px;
 }
 .swiper {
   height: 100%;
-  width: 50%;
+  width: 70%;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--sec);
+  border: 2px solid var(--sec);
+  border-radius: 50%;
+  padding: 0px 10px;
+  width: 40px;
+  transition: 0.3s all;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--comp);
+  border-color: var(--comp);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/Index/groupTraining.jpg");
+  background-repeat: none;
+  background-size: cover;
+}
+.swiper-slide__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.3s all;
+  transition-delay: 0.3s;
+  z-index: 10;
+}
+.swiper-slide__container button,
+.swiper-slide__container h4 {
+  z-index: 10 !important;
+}
+.swiper-slide:hover .swiper-slide__container {
+  opacity: 1;
+}
+.swiper-slide__container button {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  margin-top: 10px;
+}
+.swiper-slide__container h4 {
+  color: var(--main);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.swiper-slide::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  /* background-color: #080564; */
+  background-color: var(--comp);
+  opacity: 0.3;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.swiper-slide::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #0bd1d1;
+  opacity: 0.3;
+  transition: 0.4s all;
+  z-index: -1;
+}
+.swiper-slide:hover::before {
+  height: 50%;
+}
+.swiper-slide:hover::after {
+  height: 50%;
+}
+.services__card--1 {
+  background-image: url("/assets/Index/one\ on\ one.jpg");
+}
+.services__card--2 {
+  background-image: url("/assets/Index/groupTraining.jpg");
+}
+.services__card--3 {
+  background-image: url("/assets/Index/onlineCommunication.jpg");
+}
+.services__card--4 {
+  background-image: url("/assets/Index/neutrition.jpg");
+}
+.services__card--5 {
+  background-image: url("/assets/Index/assesments.jpg");
+}
+.services__card--6 {
+  background-image: url("/assets/Index/specialTraining.jpg");
+}
+/* .rectangle {
+  width: 200px;
+  height: 100px;
+  position: relative; 
+  background-color: #f2f2f2;
+}
+
+.rectangle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: transparent transparent black transparent;
+} */ ;
