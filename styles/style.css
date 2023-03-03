@@ -676,3 +676,137 @@
 .testimonials__content--active {
   display: block;
 }
+.index__cta {
+  padding: 50px 0px;
+  width: 100%;
+}
+.index__cta--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.index__cta--container::before {
+  content: "";
+  position: absolute;
+  left: 42.5%;
+  bottom: -20px;
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(90px);
+  background-color: var(--comp);
+}
+.index__cta--title {
+  font-size: 2.5rem;
+  color: var(--comp);
+  padding-bottom: 20px;
+}
+.index__cta--description {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.index__cta button {
+  font-size: 1.5rem;
+}
+.footer {
+  width: 100%;
+  background-color: var(--main);
+  padding: 50px 0px;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.col-1__img {
+  width: 75px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.col-1__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.col-1__subscribe {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 15px; */
+}
+.col-1__subscribe input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: 10px;
+}
+.col-1__subscribe input:focus .col-1__subscribe {
+  border: 1px solid var(--comp);
+}
+.col-1__subscribe input::placeholder {
+  color: var(--sec);
+}
+.col-1__subscribe button {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+.col-1__subscribe button:hover {
+  transform: translateY(0);
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.col-2,
+.col-3 {
+}
+.footer__link {
+  /* padding: 10px 0px; */
+}
+.footer__link a {
+  text-decoration: none;
+  color: var(--sec);
+  transition: 0.3s all;
+}
+.footer__link a:visited {
+  color: inherit;
+}
+.footer__link a:hover {
+  color: var(--comp);
+}
+.col-4 {
+  font-size: 1.75rem;
+}
+.col-4 i {
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.col-4 i:hover {
+  transform: translateY(-10%);
+  color: var(--comp);
+}
+.row-1 {
+  padding: 40px 0px;
+  grid-column: 1 / span 4;
+}
+.row-1 p {
+  padding-top: 40px;
+  border-top: 1px solid var(--sec);
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
