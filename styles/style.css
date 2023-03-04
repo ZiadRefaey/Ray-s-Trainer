@@ -18,7 +18,10 @@
   position: relative;
   overflow-x: hidden;
 }
-
+section {
+  padding: 50px 0px;
+  width: 100%;
+}
 .navbar {
   width: 100%;
   height: 8rem;
@@ -770,12 +773,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.col-2,
-.col-3 {
-}
-.footer__link {
-  /* padding: 10px 0px; */
-}
+
 .footer__link a {
   text-decoration: none;
   color: var(--sec);
@@ -809,4 +807,125 @@
   margin: auto;
   text-align: center;
   font-size: 0.75rem;
+}
+.content__side--page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  margin: 40px 0px;
+}
+.hero__top i {
+  margin: 0px 20px;
+  transform: translateY(20%);
+  font-size: 1.25rem;
+}
+.hero__top a {
+  color: var(--sec);
+  cursor: pointer;
+  transition: 0.3s all;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.hero__top a:hover {
+  color: var(--comp);
+}
+.hero__top p {
+  font-size: 1.25rem;
+  color: var(--comp);
+}
+.side-page__img {
+  width: 600px;
+  height: auto;
+}
+
+.side-page__description--text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.hero__description--title h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--comp);
+}
+.side-page__description--container {
+  width: 80%;
+}
+.oa {
+  background-color: var(--main);
+}
+.oa__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  grid-gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.oa__item {
+  text-align: center;
+  cursor: default;
+}
+.oa__title {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+.oa__title i {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.oa__item:hover .oa__title {
+  color: var(--comp);
+}
+.faq {
+  min-height: 500px;
+}
+.faq__container {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-gap: 25px;
+}
+.faq__title {
+  grid-column: 1 / span 3;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--comp);
+}
+.faq__item {
+  text-align: center;
+  padding: 20px;
+}
+.faq__question {
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+  transition: 0.3s all;
+}
+.faq__answer {
+  font-size: 1rem;
+  max-height: 0px;
+  /* display: none; */
+  overflow: hidden;
+  transition: all 1s;
+}
+.faq__item:hover .faq__question {
+  color: var(--comp);
+}
+.faq__item:hover .faq__answer {
+  max-height: 400px;
+  opacity: 1;
+}
+.about__cta {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
 }

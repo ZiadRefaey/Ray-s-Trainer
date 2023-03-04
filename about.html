@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles/utility.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <header class="header index__header">
+      <nav class="navbar pc__nav">
+        <ul>
+          <div class="nav__logo">
+            <img src="/assets/Logos/MainLogo.png" />
+          </div>
+          <div class="nav__items">
+            <a href="index.html"><li class="nav__item">Home</li> </a>
+            <a href="about.html"
+              ><li class="nav__item nav__item--active">About</li>
+            </a>
+            <a href="services.html"><li class="nav__item">Services</li> </a>
+            <a href="resources.html"><li class="nav__item">Resources</li> </a>
+            <a href="contact.html"><li class="nav__item">Contact</li> </a>
+          </div>
+          <div class="nav__cta">
+            <a href="pricing.html">
+              <button class="btn-primary nav__btn">Enroll Now</button>
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <button class="hamburger"><div class="bar"></div></button>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__header">
+          <img src="/assets/Logos/MainLogo.png" />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="mobile-nav__body">
+          <a class="mobile-nav__item" href="index.html">Home</a>
+          <a class="mobile-nav__item" href="about.html">About</a>
+          <a class="mobile-nav__item" href="services.html">Services</a>
+          <a class="mobile-nav__item" href="resources.html">Resources</a>
+          <a class="mobile-nav__item" href="contact.html">Contact </a>
+          <a class="mobile-nav__item" href="pricing.html">Enroll Now </a>
+        </nav>
+      </div>
+
+      <div class="hero hero__side--page">
+        <div class="hero__content content__side--page">
+          <div class="hero__top">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right hero__top-chevron"></i>
+            <p>About</p>
+          </div>
+          <div
+            class="hero__description--container side-page__description--container"
+          >
+            <div class="hero__description--title">
+              <h3>My Story</h3>
+            </div>
+            <div class="hero__description--text side-page__description--text">
+              <p>
+                As a young adult, I struggled with my own health and fitness
+                goals, but I eventually found my way to a healthier lifestyle
+                through exercise and good nutrition. The transformative power of
+                fitness inspired me to become a personal trainer, and I started
+                my journey by getting certified and working with clients
+                one-on-one.<br /><br />Over the years, I've honed my skills and
+                expanded my knowledge through additional training and
+                experience. Today, I'm proud to have helped countless
+                individuals reach their fitness goals and improve their overall
+                health and wellness. My passion for fitness and commitment to
+                helping others achieve their best selves is what drives me every
+                day.
+              </p>
+            </div>
+          </div>
+          <div class="hero__img--container">
+            <div class="hero__img side-page__img">
+              <img src="/assets/About/story.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="oa">
+      <div class="oa__container">
+        <div class="oa__item">
+          <div class="oa__title">
+            <i class="fas fa-handshake"></i>
+            <h4>Client-centered approach</h4>
+          </div>
+          <div class="oa__description">
+            At Ray's Fitness, we believe in a client-centered approach to
+            personal training. Our experienced trainers work closely with each
+            client to develop a personalized program that meets their unique
+            needs and helps them achieve their fitness goals.
+          </div>
+        </div>
+        <div class="oa__item">
+          <div class="oa__title">
+            <i class="fas fa-book"></i>
+            <h4>Evidence-based training</h4>
+          </div>
+          <div class="oa__description">
+            Our approach to personal training is based on the latest scientific
+            research and evidence-based training principles. We use a variety of
+            techniques and strategies to help our clients get the best possible
+            results in the shortest amount of time.
+          </div>
+        </div>
+        <div class="oa__item">
+          <div class="oa__title">
+            <i class="fas fa-balance-scale"></i>
+            <h4>Mind-body connection</h4>
+          </div>
+          <div class="oa__description">
+            This approach emphasizes the importance of mental and emotional
+            well-being in addition to physical fitness. It may include practices
+            such as mindfulness, meditation, and yoga, as well as nutritional
+            and lifestyle coaching to promote overall health and wellness.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq__container">
+        <div class="faq__title">Frequently Asked Questions</div>
+        <div class="card faq__item">
+          <div class="faq__question">What kind of workouts do you offer?</div>
+          <div class="faq__answer">
+            We offer a variety of workouts tailored to your fitness level and
+            goals, including strength training, cardio, HIIT, and yoga.
+          </div>
+        </div>
+        <div class="card faq__item">
+          <div class="faq__question">
+            Do I need to have any fitness experience to work with a personal
+            trainer?
+          </div>
+          <div class="faq__answer">
+            No, our personal trainers work with people of all fitness levels and
+            experience. Whether you're a beginner or an experienced athlete, we
+            can help you achieve your goals.
+          </div>
+        </div>
+        <div class="card faq__item">
+          <div class="faq__question">What is your cancellation policy?</div>
+          <div class="faq__answer">
+            We require at least 24 hours notice for cancellations. If you cancel
+            within 24 hours of your scheduled session, you may be charged for
+            the session.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="index__cta about__cta">
+      <div class="index__cta--container">
+        <div class="index__cta--description">
+          <p>
+            Interested in taking the first step towards your fitness journey?
+            Contact me today and let's start working towards your goals
+            together!
+          </p>
+        </div>
+        <div class="index__cta--button">
+          <a href="pricing.html"
+            ><button class="btn-primary">Get in Touch</button></a
+          >
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="col-1">
+          <div class="col-1__img">
+            <img src="/assets/Logos/MainLogo.png" />
+          </div>
+          <div class="col-1__subscribe">
+            <input placeholder="Your Email" type="email" />
+            <button class="btn-primary">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer__link"><a href="index.html">Home</a></div>
+          <div class="footer__link"><a href="about.html">About</a></div>
+          <div class="footer__link"><a href="services.html">Services</a></div>
+        </div>
+        <div class="col-3">
+          <div class="footer__link">
+            <a href="resources.html">Resources</a>
+          </div>
+          <div class="footer__link"><a href="contact.html">Contact</a></div>
+          <div class="footer__link"><a href="pricing.html">Pricing</a></div>
+        </div>
+        <div class="col-4">
+          <i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-facebook"></i
+          ><i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="row-1">
+          <p>Copyright All rights reserved | Designed and Developed by Rayze</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
