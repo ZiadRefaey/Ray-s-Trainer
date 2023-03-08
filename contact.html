@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles/utility.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <header class="header index__header">
+      <nav class="navbar pc__nav">
+        <ul>
+          <div class="nav__logo">
+            <img src="/assets/Logos/MainLogo.png" />
+          </div>
+          <div class="nav__items">
+            <a href="index.html"><li class="nav__item">Home</li> </a>
+            <a href="about.html"><li class="nav__item">About</li> </a>
+            <a href="services.html"
+              ><li class="nav__item nav__item--active">Services</li>
+            </a>
+            <a href="resources.html"><li class="nav__item">Resources</li> </a>
+            <a href="contact.html"><li class="nav__item">Contact</li> </a>
+          </div>
+          <div class="nav__cta">
+            <a href="pricing.html">
+              <button class="btn-primary nav__btn">Enroll Now</button>
+            </a>
+          </div>
+        </ul>
+      </nav>
+      <button class="hamburger"><div class="bar"></div></button>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__header">
+          <img src="/assets/Logos/MainLogo.png" />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="mobile-nav__body">
+          <a class="mobile-nav__item" href="index.html">Home</a>
+          <a class="mobile-nav__item" href="about.html">About</a>
+          <a class="mobile-nav__item" href="services.html">Services</a>
+          <a class="mobile-nav__item" href="resources.html">Resources</a>
+          <a class="mobile-nav__item" href="contact.html">Contact </a>
+          <a class="mobile-nav__item" href="pricing.html">Enroll Now </a>
+        </nav>
+      </div>
+
+      <!-- <div class="hero__contact">
+        <div class="hero__content--contact">
+          <div class="hero__top">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right hero__top-chevron"></i>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div> -->
+    </header>
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__content">
+          <div class="contact__content--container">
+            <div class="contact__content--top">
+              <div class="contact__content--title"><h2>Contact Me</h2></div>
+              <div class="contact__content--description">
+                I will read all your emails one by one and reply to them
+                personally. Send me any message any time and you will have your
+                response in a timely manner
+              </div>
+              <div class="contact__content--icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </div>
+            <div class="contact__content--bottom">
+              <div class="contact__content--details">
+                <div class="contact__content--phone">
+                  <p>+20101 0999 999</p>
+                </div>
+                <span>OR</span>
+                <div class="contact__content--email">
+                  <p>example@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form">
+          <form class="form">
+            <div class="contact__form--title"><h3>Send a Message</h3></div>
+            <div class="name-inputs">
+              <input class="fname" type="text" placeholder="First Name" />
+              <input class="lname" type="text" placeholder="Last Name" />
+            </div>
+            <input class="email" type="email" placeholder="Email" />
+            <input class="subject" type="text" placeholder="Subject" />
+            <textarea placeholder="Your Message..."></textarea>
+            <div class="form__footer">
+              <div class="checkbox__container">
+                <label for="my-checkbox">Subscribe to our Newsletter</label>
+                <input
+                  type="checkbox"
+                  id="my-checkbox"
+                  class="custom-checkbox"
+                />
+              </div>
+              <button class="btn-primary form-button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="col-1">
+          <div class="col-1__img">
+            <img src="/assets/Logos/MainLogo.png" />
+          </div>
+          <div class="col-1__subscribe">
+            <input placeholder="Your Email" type="email" />
+            <button class="btn-primary">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer__link"><a href="index.html">Home</a></div>
+          <div class="footer__link"><a href="about.html">About</a></div>
+          <div class="footer__link"><a href="services.html">Services</a></div>
+        </div>
+        <div class="col-3">
+          <div class="footer__link">
+            <a href="resources.html">Resources</a>
+          </div>
+          <div class="footer__link"><a href="contact.html">Contact</a></div>
+          <div class="footer__link"><a href="pricing.html">Pricing</a></div>
+        </div>
+        <div class="col-4">
+          <i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-facebook"></i
+          ><i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="row-1">
+          <p>Copyright All rights reserved | Designed and Developed by Rayze</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
