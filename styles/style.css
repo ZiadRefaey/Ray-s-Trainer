@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .body {
   background-color: #0f172a;
   color: var(--sec);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .box {
   height: 300vh;
@@ -92,7 +92,7 @@ section {
 
 .nav__item::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -10px;
   left: 0;
   width: 0%;
@@ -105,7 +105,7 @@ section {
 }
 .nav__item--active::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -10px;
   left: 0;
   width: 100%;
@@ -133,7 +133,7 @@ section {
 .hamburger::before,
 .hamburger::after {
   z-index: 120;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
@@ -191,7 +191,7 @@ section {
 .mobile-nav__active::before {
   z-index: 5;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   height: 1000%;
@@ -261,7 +261,7 @@ section {
   text-align: left;
 }
 .hero__description--container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -400px;
@@ -329,7 +329,7 @@ section {
   z-index: 5;
 }
 .hero__img::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   right: -400px;
@@ -487,7 +487,7 @@ section {
 .swiper-slide {
   width: 100%;
   height: 100%;
-  background-image: url('/assets/Index/groupTraining.jpg');
+  background-image: url("/assets/Index/groupTraining.jpg");
   background-repeat: none;
   background-size: cover;
   position: relative;
@@ -527,7 +527,7 @@ section {
 }
 .swiper-slide::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   height: 0%;
@@ -542,7 +542,7 @@ section {
 }
 .swiper-slide::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 0%;
@@ -561,22 +561,22 @@ section {
   height: 50%;
 }
 .services__card--1 {
-  background-image: url('/assets/Index/oneOnOne.jpg');
+  background-image: url("/assets/Index/oneOnOne.jpg");
 }
 .services__card--2 {
-  background-image: url('/assets/Index/groupTraining.jpg');
+  background-image: url("/assets/Index/groupTraining.jpg");
 }
 .services__card--3 {
-  background-image: url('/assets/Index/onlineCommunication.jpg');
+  background-image: url("/assets/Index/onlineCommunication.jpg");
 }
 .services__card--4 {
-  background-image: url('/assets/Index/neutrition.jpg');
+  background-image: url("/assets/Index/neutrition.jpg");
 }
 .services__card--5 {
-  background-image: url('/assets/Index/assesments.jpg');
+  background-image: url("/assets/Index/assesments.jpg");
 }
 .services__card--6 {
-  background-image: url('/assets/Index/specialTraining.jpg');
+  background-image: url("/assets/Index/specialTraining.jpg");
 }
 .testimonials {
   width: 100%;
@@ -643,7 +643,7 @@ section {
 }
 
 .testimonials__header::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -665,7 +665,7 @@ section {
   background-color: var(--main);
 }
 .testimonials__header--active::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -693,7 +693,7 @@ section {
   position: relative;
 }
 .index__cta--container::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 42.5%;
   bottom: -20px;
@@ -980,7 +980,7 @@ section {
 }
 .services__img::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   right: 0;
   width: 100%;
@@ -1031,15 +1031,31 @@ section {
   width: 100%;
   height: 100%;
   margin: auto;
+  position: relative;
+}
+.contact__content--container::after {
+  content: "";
+  z-index: -1;
+  border-radius: 50%;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: -25%;
+  bottom: -25%;
+  background-color: var(--comp);
+  filter: blur(200px);
 }
 .contact__content--top {
   width: 75%;
-  background-color: rgba(217, 217, 217, 0.3);
+  max-width: 450px;
+  background-color: rgb(127, 146, 176, 0.3);
   padding: 20px 40px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   margin-bottom: 40px;
+  border-radius: 25px;
+  border: 1px solid var(--comp);
 }
 .contact__content--title {
   font-size: 1.5rem;
@@ -1063,6 +1079,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 3px 25px 5px var(--main);
 }
 .contact__content--icon i {
   font-size: 1.25rem;
@@ -1089,7 +1106,7 @@ section {
   color: var(--comp);
 }
 .contact__form {
-  background-image: url('/assets/contact.jpg');
+  background-image: url("/assets/contact.jpg");
   background-repeat: none;
   background-size: cover;
   /* z-index: -1; */
@@ -1104,7 +1121,7 @@ section {
 }
 .contact__form::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   width: 100%;
@@ -1123,6 +1140,7 @@ section {
   margin: auto;
   z-index: 10;
   width: 75%;
+  /* max-width: 450px; */
   display: flex;
   flex-direction: column;
   align-items: center;
