@@ -1380,3 +1380,39 @@ textarea {
 .trainers-intro__item:hover .trainers-intro__item--title {
   color: var(--comp);
 }
+.values__title {
+  font-size: xx-large;
+  color: var(--comp);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.values__item--container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.values__item {
+  padding: 25px;
+}
+.values__item--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+.values__item--title h4 {
+  margin-left: 10px;
+}
+.values__item--title i {
+  margin-right: 10px;
+  color: var(--comp);
+}
+.values__item--description {
+  font-size: 1.25rem;
+  text-align: center;
+}
