@@ -93,3 +93,5 @@ testimonialTabsContainer.addEventListener("click", function (e) {
   );
   activeContent.classList.add("testimonials__content--active");
 });
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
