@@ -410,6 +410,7 @@
           >
         </div>
       </div>
+      <span class="blur-3"></span>
     </section>
 
     <footer class="footer">
@@ -456,13 +457,26 @@
         // Optional parameters
         direction: "horizontal",
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 10,
         grabCursor: true,
         // Navigation arrows
         navigation: {
           nextEl: ".swiper-next",
           prevEl: ".swiper-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          700: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          1130: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          // when window width is >= 640px
         },
       });
     </script>
