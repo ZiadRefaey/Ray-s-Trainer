@@ -30,5 +30,5 @@
   border-radius: 25px;
   background-color: var(--main);
   box-shadow: 2px 2px 5px 2px #010a20;
-  z-index: 10;
+  z-index: 1;
 }
